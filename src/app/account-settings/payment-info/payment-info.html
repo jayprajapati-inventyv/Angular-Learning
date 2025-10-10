@@ -1,0 +1,10 @@
+<p>Current user plan: {{ user.userPlan == undefined ? 'Free' : user.userPlan }}</p>
+
+<label for="plan-select">Upgrade Plan:</label>
+<select id="plan-select" [(ngModel)]="selectedPlan">
+	<option value="Free">Free</option>
+	<option value="Pro">Pro</option>
+	<option value="Premium">Premium</option>
+</select>
+<button (click)="upgradePlan()" [disabled]="user.userPlan === selectedPlan">Upgrade</button>
+

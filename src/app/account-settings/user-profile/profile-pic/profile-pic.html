@@ -1,0 +1,8 @@
+
+<label class="profile-pic-container profile-pic-hoverable" for="profilePicInput">
+	<img [src]="profilePicUrl || defaultPicUrl" alt="User Profile Picture" class="profile-pic-img" />
+	<span class="profile-pic-hover-text">Change image</span>
+</label>
+<input id="profilePicInput" type="file" accept="image/*" (change)="onFileSelected($event)" style="display:none;" />
+
+

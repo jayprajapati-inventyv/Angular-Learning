@@ -1,0 +1,13 @@
+<div>
+  <div><strong>Name:</strong> {{ user.name }}</div>
+  <div><strong>Age:</strong> {{ user.age }}</div>
+  <div><strong>Email:</strong> {{ user.email }}</div>
+  <div><strong>Bio:</strong> {{ user.bio }}</div>
+  <div *ngIf="editBio">
+   <strong>Updatebio :</strong> <input type="text" [(ngModel)]="bioInput" />
+    <button type="button" (click)="saveBio()">Save</button>
+  </div>
+  <button type="button" (click)="editBio = !editBio">{{ editBio ? 'Cancel' : 'Edit Bio' }}</button>
+</div>
+
+

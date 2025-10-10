@@ -1,0 +1,7 @@
+<app-product-list (addToCart)="addProductToCart($event)"></app-product-list>
+<hr>
+<app-cart
+  [cart]="cart"
+  (removeOne)="removeOneFromCart($event)"
+  (removeAll)="removeAllFromCart($event)">
+</app-cart>

@@ -1,0 +1,8 @@
+<p>product-list works!</p>
+<h2>Products</h2>
+@for (item of products; track item) {
+  <div>
+    {{ item.name }} - ₹{{ item.price }}
+    <button (click)="addToCart.emit(item)">Add to Cart</button>
+  </div>
+}
