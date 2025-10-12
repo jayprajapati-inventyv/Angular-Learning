@@ -1,8 +1,8 @@
-import { Component ,Input,Output,EventEmitter} from '@angular/core';
-
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { OfferPipePipe } from '../offer-pipe-pipe';
 @Component({
   selector: 'app-cart',
-  imports: [],
+  imports: [OfferPipePipe],
   templateUrl: './cart.html',
   styleUrl: './cart.scss',
 })

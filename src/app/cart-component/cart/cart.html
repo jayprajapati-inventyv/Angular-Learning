@@ -1,17 +1,20 @@
 <p>cart works!</p>
 <h2>Cart</h2>
 @if (cart.length == 0) {
-  <div> Cart is empty</div>
+<div> Cart is empty</div>
 } @else{
-  @for (item of cart; track item) {
-    <div>
-      {{ item.quantity }} - {{ item.name }} - Total : ₹{{ item.price * item.quantity }}
-      <button (click)="onRemoveOne(item)">Remove One</button>
-      <button (click)="onRemoveAll(item)">Remove All</button>
-    </div>
-  }
+@for (item of cart; track item) {
+<div>
+  {{ item.quantity }} - {{ item.name }} - Total : ₹{{ item.price * item.quantity }}
+  <button (click)="onRemoveOne(item)">Remove One</button>
+  <button (click)="onRemoveAll(item)">Remove All</button>
+</div>
+}
 }
 
 @if (cart.length > 0) {
-  <h3>Total: ₹{{ total }}</h3>
+<h3>Original Total: ₹{{ total }}</h3>
+@if(total !== (total | offerPipe)) {
+<h3>Offer Price: ₹{{ total | offerPipe }}</h3>
+}
 }
