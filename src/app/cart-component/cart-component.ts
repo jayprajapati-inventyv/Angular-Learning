@@ -5,7 +5,7 @@ import { ProductList } from './product-list/product-list';
 
 @Component({
   selector: 'app-cart-component',
-  imports: [Cart,ProductList],
+  imports: [Cart, ProductList],
   templateUrl: './cart-component.html',
   styleUrl: './cart-component.scss'
 })

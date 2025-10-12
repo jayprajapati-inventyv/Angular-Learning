@@ -1,0 +1,11 @@
+<nav class="navbar">
+    <div class="navbar-content">
+        @if(isLoggedIn()) {
+        <button routerLink="/cart">Cart</button>
+        <button routerLink="/account-settings">Account Settings</button>
+        <button (click)="logout()">Logout</button>
+        } @else {
+        <button (click)="login()">Login</button>
+        }
+    </div>
+</nav>
