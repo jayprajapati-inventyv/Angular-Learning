@@ -6,7 +6,7 @@ import { AuthService } from './service/auth.service';
 import { Navbar } from './navbar/navbar';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CartComponent, AccountSettings, RouterLink, Navbar],
+  imports: [RouterOutlet,Navbar],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
