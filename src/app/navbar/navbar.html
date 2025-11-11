@@ -3,6 +3,7 @@
         @if(isLoggedIn()) {
         <button routerLink="/cart">Cart</button>
         <button routerLink="/account-settings">Account Settings</button>
+        <button routerLink="/ag-grid">AG Grid</button>
         <button (click)="logout()">Logout</button>
         } @else {
         <button (click)="login()">Login</button>

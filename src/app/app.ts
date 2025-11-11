@@ -1,7 +1,6 @@
-import { AccountSettings } from './account-settings/account-settings';
+
 import { Component, inject } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
-import { CartComponent } from './cart-component/cart-component';
 import { AuthService } from './service/auth.service';
 import { Navbar } from './navbar/navbar';
 @Component({
