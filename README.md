@@ -1,59 +1,70 @@
-# CartApp
+# Angular Material Admin Dashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
+This project is a modern, responsive admin dashboard built with Angular 17+ and Angular Material. It features user management and activity log tracking, with a clean UI and modular architecture.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- **Dashboard Layout**: Sidebar navigation, top bar, and responsive two-column main content.
+- **User List**: View, search, filter, paginate, add, edit, and delete users. Data is fetched from an API.
+- **Activity Logs**: View login, logout, and user deletion logs. Filter by user and action type. Admins can delete logs.
+- **Material UI**: Uses Angular Material for cards, tables, buttons, icons, inputs, chips, and paginator.
+- **Responsive Design**: Works on desktop, tablet, and mobile. Columns stack vertically on small screens.
+- **Modular Structure**: Each feature is a separate component and folder under `src/app/dashboard/`.
 
-```bash
-ng serve
-```
+## Getting Started
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Prerequisites
+- Node.js (v18+ recommended)
+- Angular CLI (`npm install -g @angular/cli`)
 
-## Code scaffolding
+### Installation
+1. Clone the repository:
+	```bash
+	git clone https://github.com/jayprajapati-inventyv/Angular-Learning.git
+	cd Angular-Learning
+	```
+2. Install dependencies:
+	```bash
+	npm install
+	```
+3. Start the development server:
+	```bash
+	ng serve
+	```
+4. Open [http://localhost:4200](http://localhost:4200) in your browser.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Project Structure
 
-```bash
-ng generate component component-name
-```
+- `src/app/dashboard/` — Dashboard, User List, and Activity Log components
+- `src/app/service/` — Service layer for user and log management
+- `src/app/interface/` — TypeScript interfaces for user and log data
+- `src/styles.scss` — Global styles and Material theme
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## API Integration
 
-```bash
-ng generate --help
-```
+- User List fetches data from a REST API endpoint on component initialization (see `user-list.ts`).
+- Update the API URL in `user-list.ts` to match your backend.
 
-## Building
+## Customization
 
-To build the project run:
+- Add more Material components as needed (charts, dialogs, etc.)
+- Extend user and log models in `interface/`.
+- Update styles in `dashboard.scss` for branding.
 
-```bash
-ng build
-```
+## Testing
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Run unit tests:
+  ```bash
+  ng test
+  ```
 
-## Running unit tests
+## Build
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Build for production:
+  ```bash
+  ng build
+  ```
 
-```bash
-ng test
-```
+## License
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+MIT
