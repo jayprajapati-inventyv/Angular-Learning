@@ -1,0 +1,33 @@
+“Create a modern, responsive admin dashboard UI for managing users and activity logs. The dashboard should contain the following components in dashboard component:
+
+1. User List Component
+
+Displays a list of all registered users.
+
+Each row should include: user name, email, role, status, and actions.
+
+Actions available: Add User, Remove User, Edit User.
+
+Provide search and filters for quick user lookup.
+
+Pagination for large datasets.
+
+2. User Activity Log Component
+
+Shows all login and logout logs.
+
+Includes details such as: user name, timestamp, action type (login/logout/delete).
+
+Admin should be able to delete logs.
+
+Provide filtering by user and action type.
+
+Dashboard Requirements
+
+Clean, professional UI with a sidebar and top navigation.
+
+Responsive layout (desktop, tablet, mobile).
+
+Use cards, tables, and charts where appropriate.
+
+Include icons for user, logs, and location sections.

@@ -1,0 +1,20 @@
+.activity-log-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 2rem;
+}
+.activity-log-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.activity-table th, .activity-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
